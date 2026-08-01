@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Mincord</title>
+
+<link rel="stylesheet" href="../style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="../Scripts/supabaseClient.js"></script>
+</head>
+
+<body id="pages" style="align-items:center;">
+
+<h1>Sign In</h1>
+
+<div id="loadingScreen" style="
+    display:none;
+    position:fixed;
+    inset:0;
+    background: #252525;
+    color:white;
+    justify-content:center;
+    align-items:center;
+    font-size:2rem;
+    z-index:9999;
+">
+    Signing you in...
+</div>
+
+<script src="../Scripts/signIn.js" type="module"></script>
+<script src="../Scripts/Theme.js" async defer></script>
+<form id="signInForm">
+    <p>Sign In with email or password</p>
+    <input type="email" id="email" placeholder="Email" required style="border: 0.75px, solid;" #ccc>
+    <input type="password" id="password" placeholder="Password" required style="border: 0.75px, solid;" #ccc>
+    <button id="signInBtn" type="submit" style="border: 0.75px, solid;" #ccc>Sign In</button>
+</form>
+
+<div class="line-container">
+  <p>OR</p>
+</div>
+
+<button class="google-btn" type="button" id="googleSignInBtn">
+  <img src="../Assests/google.svg" alt="Google Logo" class="google-logo">
+  Sign In with Google
+</button>
+
+<p>Don't have an account? <a href="SignUp.html">Sign Up</a></p>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MiniCord</title>
+  <link rel="stylesheet" href="../style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="../Scripts/supabaseClient.js"></script>
+</head>
+<body id="Messenger">
+
+<h1 style = "margin-left: 10px;">MiniCord</h1>
+<div id="messages"></div>
+
+<button id="side_btn">&lt;</button>
+
+<form id="messageForm" autocomplete="off">
+  <input type="text" id="messageField" placeholder="Enter your message" required />
+  <button type="submit">Send</button>
+</form>
+
+<script src="../Scripts/main.js"></script>
+<script src="../Scripts/sidebar.js" type="module"></script>
+<script src="../Scripts/Theme.js" async defer></script>
+
+<nav class="sidebar">
+  <button id = "servers">Servers</button>
+  <button id = "settings">Settings</button>
+  <button id = "thememarketplace">Theme Marketplace</button>
+  <input type="file" id="themeUpload" accept=".css,text/css">
+  <button id="resetTheme">Reset Theme</button>
+  <button id="logout">Logout</button>
+</nav>
+
+</body>
+</html>
